@@ -4,7 +4,12 @@ import Logo from "@/assets/Logo.png"
 import Link from './Link'
 
 
-const Navbar = () => {
+type Props = {
+  selectedPage: string,
+  setSelectedPage: (value: string) => void,
+}
+
+const Navbar = ({selectedPage, setSelectedPage}: Props) => {
   const flexBetween = "flex items-center justify-between"
 
   return (
